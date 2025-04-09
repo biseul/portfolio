@@ -355,6 +355,8 @@ main p {
   margin: 0 0 0 2vw;
   font-size: 0.8rem;
   line-height: 1.6;
+  white-space: nowrap;
+  word-break: normal;
 }
 
 .proright {

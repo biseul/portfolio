@@ -141,7 +141,7 @@ $(function () {
 
     var image = $('#movingImage');
 
-    var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 47; // 대각선 각도 계산
+    var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 52; // 대각선 각도 계산
     image.css('transform', 'translate(-50%, -' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0');
   });
@@ -153,7 +153,7 @@ $(function () {
 
     var image = $('#movingImage');
 
-    var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 47; // 대각선 각도 계산
+    var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 52; // 대각선 각도 계산
     image.css('transform', 'translate(-50%, -' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0'); // 회전 기준점 설정
   });
@@ -185,7 +185,7 @@ $(function () {
 
     var image = $('#movingImage2');
 
-    var degree = -Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) + 47; // 대각선 각도 계산
+    var degree = -Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) + 52; // 대각선 각도 계산
     image.css('transform', 'translate(50%, ' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0');
   });
@@ -197,7 +197,7 @@ $(function () {
 
     var image = $('#movingImage2');
 
-    var degree = -Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) + 47; // 대각선 각도 계산
+    var degree = -Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) + 52; // 대각선 각도 계산
     image.css('transform', 'translate(50%, ' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0');
   });
@@ -232,7 +232,7 @@ $(function () {
 
     var image = $('#movingImage3');
 
-    var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 47; // 대각선 각도 계산
+    var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 52; // 대각선 각도 계산
     image.css('transform', 'translate(-50%, -' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0');
   });
@@ -244,7 +244,7 @@ $(function () {
 
     var image = $('#movingImage3');
 
-    var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 47; // 대각선 각도 계산
+    var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 52; // 대각선 각도 계산
     image.css('transform', 'translate(-50%, -' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0'); // 회전 기준점 설정
   });
