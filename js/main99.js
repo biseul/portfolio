@@ -2,53 +2,53 @@ $(function () {
   //alert('경고')
 
   // 1200 이상 되면 원래 html로 이동하기
+  let resizeTimeout;
+
   window.addEventListener('resize', function () {
-    if (window.innerWidth > 1024) {
-      this.window.location.href = 'index.html';
-    }
-  })
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function () {
+      if (window.innerWidth > 1024 && !window.location.href.includes('index.html')) {
+        window.location.href = 'index.html';
+      }
+    }, 300);
+  });
 
   // 스크롤 내리면 header 클래스 추가하기
   window.addEventListener('scroll', function () {
     if (this.window.scrollY > 0) {
-      document.querySelector('header').classList.add('on')
+      document.querySelector('header').classList.add('on');
     } else {
-      document.querySelector('header').classList.remove('on')
+      document.querySelector('header').classList.remove('on');
     }
-  })
-
-
+  });
 
   // 스크롤 내리면 header 클래스 추가하기
   window.addEventListener('scroll', function () {
     if (this.window.scrollY > 0) {
-      document.querySelector('header').classList.add('on')
+      document.querySelector('header').classList.add('on');
     } else {
-      document.querySelector('header').classList.remove('on')
+      document.querySelector('header').classList.remove('on');
     }
-  })
+  });
 
   // header 에 버튼 누르면 해당하는 곳으로 이동하기 =
   const animationMove = function (selector) {
-    const targerEl = document.querySelector(selector)
-    const bsy = window.scrollY
-    const targets = targerEl.getBoundingClientRect().top + bsy
+    const targerEl = document.querySelector(selector);
+    const bsy = window.scrollY;
+    const targets = targerEl.getBoundingClientRect().top + bsy;
     // scrollTO 는 위치로 이동
     window.scrollTo({
       top: targets,
-      behavior: 'smooth'
-    })
-  }
-  const scrollMove = document.querySelectorAll('[data-animation-scroll="true"]')
+      behavior: 'smooth',
+    });
+  };
+  const scrollMove = document.querySelectorAll('[data-animation-scroll="true"]');
   for (let i = 0; i < scrollMove.length; i++) {
     scrollMove[i].addEventListener('click', function () {
       const target = this.dataset.target;
-      animationMove(target)
-    })
+      animationMove(target);
+    });
   }
-
-
-
 
   // gotop효과
   // window 스크롤 하면 할일
@@ -74,7 +74,6 @@ $(function () {
     );
   });
 
-
   $('.nav-logo').click(function (e) {
     e.preventDefault();
     // html, body 스크롤 0
@@ -86,55 +85,44 @@ $(function () {
     );
   });
 
-
-
-  const spanEl = document.querySelector('main h2 span')
-  const txtArr = ['Graphic Designer', 'Web Publisher', 'Video Editor', 'Photographer']
+  const spanEl = document.querySelector('main h2 span');
+  const txtArr = ['Graphic Designer', 'Web Publisher', 'Video Editor', 'Photographer'];
 
   let index = 0;
-  let currentTxt = txtArr[index].split("")
+  let currentTxt = txtArr[index].split('');
 
   function writeTxt() {
-    spanEl.textContent += currentTxt.shift()
+    spanEl.textContent += currentTxt.shift();
 
     if (currentTxt.length !== 0) {
       // 아직 출력할게 남았을 때
       // floor는 정수 내림
       // random은 0~1미만인 수 아무거나 나옴
-      setTimeout(writeTxt, Math.floor(Math.random() * 100))
+      setTimeout(writeTxt, Math.floor(Math.random() * 100));
     } else {
       // 다출력되었을 때
-      currentTxt = spanEl.textContent.split("")
+      currentTxt = spanEl.textContent.split('');
       // 텍스트를 지우기 위해서 화면에 표시된 텍스트를 다시 한글자 단위로 분리해서 가져오기
       // 3초 = 3000
-      setTimeout(deleteTxt, 3000)
+      setTimeout(deleteTxt, 3000);
     }
   }
 
   function deleteTxt() {
     // pop은 뒤에서 부터 지움
-    currentTxt.pop()
-    spanEl.textContent = currentTxt.join("")
+    currentTxt.pop();
+    spanEl.textContent = currentTxt.join('');
     if (currentTxt.length !== 0) {
       // 덜 삭제됐다
-      setTimeout(deleteTxt, Math.floor(Math.random() * 100))
+      setTimeout(deleteTxt, Math.floor(Math.random() * 100));
     } else {
       // 다 삭제됐다
-      index = (index + 1) % txtArr.length
-      currentTxt = txtArr[index].split("")
-      writeTxt()
+      index = (index + 1) % txtArr.length;
+      currentTxt = txtArr[index].split('');
+      writeTxt();
     }
   }
-  writeTxt()
-
-
-
-
-
-
-
-
-
+  writeTxt();
 
   //nav 누르면 class의 탑으로 보내기
   function scrollToElement(selector) {
@@ -154,7 +142,6 @@ $(function () {
     scrollToElement('#contact');
   });
 
-
   // 첫 번째 유성우
 
   $(window).on('load', function () {
@@ -164,7 +151,7 @@ $(function () {
     var image = $('#movingImage');
 
     var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 47; // 대각선 각도 계산
-    image.css('transform', 'translate(-50%, -' + 50 * screenHeight / screenWidth + '%) rotate(' + degree + 'deg)');
+    image.css('transform', 'translate(-50%, -' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0');
   });
 
@@ -176,10 +163,9 @@ $(function () {
     var image = $('#movingImage');
 
     var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 47; // 대각선 각도 계산
-    image.css('transform', 'translate(-50%, -' + 50 * screenHeight / screenWidth + '%) rotate(' + degree + 'deg)');
+    image.css('transform', 'translate(-50%, -' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0'); // 회전 기준점 설정
   });
-
 
   // 유성우 움직이기
   $(window).on('scroll', function () {
@@ -196,11 +182,10 @@ $(function () {
 
       image.css({
         top: newTop + 'px',
-        left: newLeft + 'px'
+        left: newLeft + 'px',
       });
     }
   });
-
 
   // 두 번째 유성우
   $(window).on('load', function () {
@@ -210,7 +195,7 @@ $(function () {
     var image = $('#movingImage2');
 
     var degree = -Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) + 47; // 대각선 각도 계산
-    image.css('transform', 'translate(50%, ' + 50 * screenHeight / screenWidth + '%) rotate(' + degree + 'deg)');
+    image.css('transform', 'translate(50%, ' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0');
   });
 
@@ -222,10 +207,9 @@ $(function () {
     var image = $('#movingImage2');
 
     var degree = -Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) + 47; // 대각선 각도 계산
-    image.css('transform', 'translate(50%, ' + 50 * screenHeight / screenWidth + '%) rotate(' + degree + 'deg)');
+    image.css('transform', 'translate(50%, ' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0');
   });
-
 
   // 유성우 움직이기
   $(window).on('scroll', function () {
@@ -245,11 +229,10 @@ $(function () {
 
       image.css({
         top: newTop + 'px',
-        right: newRight + 'px'
+        right: newRight + 'px',
       });
     }
   });
-
 
   // 세 번째 유성우
   $(window).on('load', function () {
@@ -259,7 +242,7 @@ $(function () {
     var image = $('#movingImage3');
 
     var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 47; // 대각선 각도 계산
-    image.css('transform', 'translate(-50%, -' + 50 * screenHeight / screenWidth + '%) rotate(' + degree + 'deg)');
+    image.css('transform', 'translate(-50%, -' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0');
   });
 
@@ -271,10 +254,9 @@ $(function () {
     var image = $('#movingImage3');
 
     var degree = Math.atan2(screenHeight, screenWidth) * (180 / Math.PI) - 47; // 대각선 각도 계산
-    image.css('transform', 'translate(-50%, -' + 50 * screenHeight / screenWidth + '%) rotate(' + degree + 'deg)');
+    image.css('transform', 'translate(-50%, -' + (50 * screenHeight) / screenWidth + '%) rotate(' + degree + 'deg)');
     image.css('transform-origin', '0 0'); // 회전 기준점 설정
   });
-
 
   // 유성우 움직이기
   $(window).on('scroll', function () {
@@ -293,20 +275,10 @@ $(function () {
 
       image.css({
         top: newTop + 'px',
-        left: newLeft + 'px'
+        left: newLeft + 'px',
       });
     }
   });
-
-
-
-
-
-
-
-
-
-
 
   // video 클릭했을 때 할일
   //index 하나하나를 el(매개변수)으로 지은것임
@@ -342,6 +314,4 @@ $(function () {
     $('.popup').removeClass('on');
     $('.popup').find('video')[0].pause();
   });
-
-
 });
