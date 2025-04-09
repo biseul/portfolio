@@ -16,18 +16,9 @@ $(function () {
   // 스크롤 내리면 header 클래스 추가하기
   window.addEventListener('scroll', function () {
     if (this.window.scrollY > 0) {
-      document.querySelector('header').classList.add('on');
+      document.querySelector('nav').classList.add('on');
     } else {
-      document.querySelector('header').classList.remove('on');
-    }
-  });
-
-  // 스크롤 내리면 header 클래스 추가하기
-  window.addEventListener('scroll', function () {
-    if (this.window.scrollY > 0) {
-      document.querySelector('header').classList.add('on');
-    } else {
-      document.querySelector('header').classList.remove('on');
+      document.querySelector('nav').classList.remove('on');
     }
   });
 
@@ -283,10 +274,7 @@ $(function () {
   // video 클릭했을 때 할일
   //index 하나하나를 el(매개변수)으로 지은것임
   $('.portfolio figure').each(function (index, el) {
-    //자식요소를 찾을때 find
-    $(el).mouseenter(function () {
-      $(this).find('video')['0'].play();
-    });
+    $(this).find('video')['0'].play();
     // $(el).mouseleave(function () {
     //   $(this).find('video')['0'].pause();
     //   $(this).find('video')['0'].currentTime = 0;
