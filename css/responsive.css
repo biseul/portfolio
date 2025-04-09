@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+
+@media screen and (max-width:1560px) {
+    body {
+        width: 100%;
+    }
+
+    .title {
+        width: 60%;
+        height: 60%;
+        padding: calc((100vh - 700px) / 2) 0;
+        /* height: 5rem; */
+    }
+
+    .title img {
+        width: 70%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+
+    main .star1 {
+        position: absolute;
+        top: 23%;
+        right: 35%;
+        animation: blink 2s infinite;
+    }
+
+    main .star2 {
+        position: absolute;
+        top: 45%;
+        right: 22%;
+        animation: blink 2s infinite;
+    }
+
+    main .star3 {
+        position: absolute;
+        bottom: 30%;
+        left: 24%;
+        animation: blink 2s infinite;
+    }
+
+    .popup .poptxt h3 {
+        font-size: 2rem;
+        margin-top: 12vh;
+        margin-bottom: 6vh;
+        color: #4899be;
+      }
+      
+      .popup .poptxt p {
+        font-size: 1.3rem;
+        margin-bottom: 6vh;
+        color: #777;
+      }
+}
+
+
