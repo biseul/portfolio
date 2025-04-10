@@ -76,6 +76,29 @@ $(function () {
     );
   });
 
+
+  // scroll 이벤트 함수 정의
+  function checkScroll() {
+    if ($(window).scrollTop() >= 300) {
+      $('.top').fadeIn();
+    } else {
+      $('.top').fadeOut();
+    }
+  }
+
+  // 스크롤 이벤트 발생 시 실행
+  $(window).scroll(checkScroll);
+
+  // 페이지 로드 시에도 한 번 실행
+  checkScroll();
+
+  // Go Top 버튼 클릭 시
+  $('.top, .nav-logo').click(function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 500);
+  });
+
+
   const spanEl = document.querySelector('main h2 span');
   const txtArr = ['Graphic Designer', 'Web Publisher', 'Video Editor', 'Photographer'];
 

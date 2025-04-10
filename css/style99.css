@@ -532,6 +532,7 @@ figure:hover h3 {
 }
 
 .top {
+  display: none;
   display: flex;
   flex-direction: column;
   align-items: center;
