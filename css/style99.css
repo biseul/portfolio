@@ -6,9 +6,6 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: 16px;
-} */
 
 body {
   overflow-x: hidden;
@@ -18,23 +15,9 @@ body {
   margin: 0;
 }
 
-/* 스크롤바 커스텀 */
 ::-webkit-scrollbar {
   display: none;
-  /* width: 15px; */
-  /*스크롤바 너비*/
 }
-
-/* ::-webkit-scrollbar-thumb {
-  background-color: rgba(55, 159, 185, 0.5);
-  border-radius: 5px;
-} */
-
-/* #8073fa #6257bb */
-
-/* ::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-} */
 
 @font-face {
   font-family: 'hakgyoun';
@@ -175,7 +158,6 @@ nav li {
   font-size: 0.8rem;
   color: rgb(218, 216, 216);
   cursor: pointer;
-  /* letter-spacing: 0.25rem; */
 }
 
 nav li a {
@@ -199,7 +181,6 @@ main {
 
 .title {
   position: relative;
-  /* bottom: 50%; */
   width: 90%;
   height: 60%;
   display: flex;
@@ -217,10 +198,7 @@ main {
 
 main .container h2 {
   font-family: 'suiter';
-  /* position: absolute; */
   line-height: 2;
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
   text-align: center;
   color: rgb(218, 216, 216);
   font-size: 0.8rem;
@@ -242,8 +220,6 @@ main .container span {
   padding: 5vh 10vw;
   backdrop-filter: blur(10px);
 }
-
-/* 100vh가 화면 전체임 */
 
 .box {
   width: 100%;
@@ -272,7 +248,6 @@ main h2 {
   font-size: 1.5rem;
   text-align: center;
   padding: 2vh 0;
-  /* letter-spacing: 0.3rem; */
 }
 
 .portfolio h2 {
@@ -287,20 +262,20 @@ main h3 {
 }
 
 main p {
-  font-family: 'cafe24';
+  font-family: 'kcc';
   color: rgb(218, 216, 216);
+  font-size: 1.2rem;
 }
 
 .profile .inner {
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   margin: 4vh auto;
   padding: 2vw;
 }
 
 .proleft img {
-  width: 40%;
+  width: 50%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -324,21 +299,11 @@ main p {
 
 .edu {
   display: flex;
-  /* flex-direction: column; */
   margin: 0 0 5vh 0;
 }
 
 .ricense {
   display: flex;
-  /* flex-direction: column; */
-}
-
-/* .rpbox {
-  margin: 0 0 0 1vw;
-} */
-
-.space {
-  line-height: 2;
 }
 
 .proleft {
@@ -352,9 +317,8 @@ main p {
 }
 
 .pbox p {
-  margin: 0 0 0 2vw;
+  margin: 0 0 2vh 2vw;
   font-size: 0.8rem;
-  line-height: 1.6;
   white-space: nowrap;
   word-break: normal;
 }
@@ -370,7 +334,6 @@ main p {
 
 .skill {
   display: flex;
-  /* flex-direction: column; */
   margin: 4vh 0;
 }
 
@@ -381,6 +344,17 @@ main p {
 .skill .logo {
   margin: 0 0 0 2vw;
 }
+
+.skill .logo img {
+  margin: 1vh 1vw;
+  transition: transform 0.3s ease;
+}
+
+.skill .logo img:hover {
+  transform: translateY(-5px) scale(1.2);
+  cursor: pointer;
+}
+
 
 .logotop {
   display: flex;
@@ -422,7 +396,6 @@ figure video {
 
 figure .bbox {
   position: absolute;
-  /* visibility: hidden; */
   width: 100%;
   height: 17%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -436,7 +409,6 @@ figure .bbox {
 
 figure .bbox h3 {
   font-family: 'cafe24';
-  /* visibility: hidden; */
   text-align: center;
   transition: all 0.3s;
   display: flex;
@@ -466,8 +438,6 @@ figure:hover h3 {
   padding: 20vh 7vw 14vh 10vw;
   background-color: #222;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   flex-direction: column;
   top: 0;
   left: -100vw;
@@ -548,9 +518,7 @@ figure:hover h3 {
 
 .contact .inner .mail {
   display: flex;
-  /* flex-direction: column; */
   font-size: 1.3rem;
-  /* text-align: center; */
   margin-top: 2vh;
 }
 
@@ -572,9 +540,8 @@ figure:hover h3 {
   height: 7%;
   position: fixed;
   right: 2vw;
-  bottom: 10vh;
+  bottom: 11vh;
   filter: drop-shadow(3px 3px 7px #c4c4c4);
-  /* display: none; */
 }
 
 .top .gotop1 {
@@ -604,7 +571,7 @@ figure:hover h3 {
     transform: translateY(0);
     opacity: 1;
   }
-  /* 50% { transform: translateY(-20px); opacity: 1; } */
+
   100% {
     transform: translateY(-5px);
     opacity: 0.7;
@@ -616,7 +583,7 @@ figure:hover h3 {
     transform: translateY(0);
     opacity: 1;
   }
-  /* 50% { transform: translateY(-20px); opacity: 1; } */
+
   100% {
     transform: translateY(-8px);
     opacity: 0.7;
@@ -628,7 +595,7 @@ figure:hover h3 {
     transform: translateY(0);
     opacity: 1;
   }
-  /* 50% { transform: translateY(-20px); opacity: 1; } */
+
   100% {
     transform: translateY(-10px);
     opacity: 0.7;
@@ -649,5 +616,5 @@ figure:hover h3 {
 
 /* javascript로 추가할 클래스 */
 nav.on {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 19, 44, 0.8);
 }

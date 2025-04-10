@@ -3,14 +3,13 @@
 @media screen and (max-width: 825px) {
   .profile .inner {
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     margin: 4vh auto;
     padding: 2vw;
   }
   
   .proleft img {
-    width: 60%;
+    width: 50%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -48,7 +47,7 @@
   }
   
   .space {
-    line-height: 2;
+    margin: 5vh 0;
   }
   
   .proleft {
@@ -62,9 +61,8 @@
   }
   
   .pbox p {
-    margin: 0 0 0 3vw;
+    margin: 0 0 1vh 3vw;
     font-size: 0.8rem;
-    line-height: 1.6;
   }
   
   .proright {
@@ -98,12 +96,6 @@
   .logobtm {
     flex-direction: column;
   }
-
-  /* .logob {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  } */
   
   .skill .logo img {
     margin: 1vh 1vw;
@@ -112,16 +104,37 @@
 }
 
 @media screen and (max-width: 430px) {
+  main .star1 {
+    position: absolute;
+    top: 8%;
+    right: 30%;
+    animation: blink 2s infinite;
+  }
+
+  main .star2 {
+    position: absolute;
+    bottom: 30%;
+    left: 16%;
+    animation: blink 2s infinite;
+  }
+  
+  main .star3 {
+    position: absolute;
+    bottom: 44%;
+    right: 14%;
+    animation: blink 2s infinite;
+  }
+  
+
   .profile .inner {
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     margin: 4vh auto;
     padding: 2vw;
   }
   
   .proleft img {
-    width: 60%;
+    width: 50%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -159,7 +172,7 @@
   }
   
   .space {
-    line-height: 2;
+    margin: 5vh 0;
   }
   
   .proleft {
@@ -173,9 +186,8 @@
   }
   
   .pbox p {
-    margin: 0 0 0 2vw;
+    margin: 0 0 1.5vh 1.5vw;
     font-size: 0.8rem;
-    line-height: 1.6;
   }
   
   .proright {
@@ -198,7 +210,7 @@
   }
   
   .skill .logo {
-    margin: 0 0 0 20vw;
+    margin: 0 0 0 16vw;
   }
   
 
@@ -209,12 +221,6 @@
   .logobtm {
     flex-direction: column;
   }
-
-  /* .logob {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  } */
   
   .skill .logo img {
     margin: 1vh 1vw;
@@ -224,7 +230,6 @@
     display: flex;
     flex-direction: column;
     font-size: 1.3rem;
-    /* text-align: center; */
     margin-top: 2vh;
   }
 }

@@ -10,7 +10,6 @@
         width: 60%;
         height: 60%;
         padding: calc((100vh - 700px) / 2) 0;
-        /* height: 5rem; */
     }
 
     .title img {
@@ -19,25 +18,24 @@
         margin: 0 auto;
     }
 
-
     main .star1 {
         position: absolute;
-        top: 23%;
+        top: 28%;
         right: 35%;
         animation: blink 2s infinite;
     }
 
     main .star2 {
         position: absolute;
-        top: 45%;
-        right: 22%;
+        top: 48%;
+        right: 18%;
         animation: blink 2s infinite;
     }
 
     main .star3 {
         position: absolute;
-        bottom: 30%;
-        left: 24%;
+        bottom: 35%;
+        left: 22%;
         animation: blink 2s infinite;
     }
 

@@ -139,7 +139,6 @@ nav li {
   font-size: 1rem;
   color: rgb(218, 216, 216);
   cursor: pointer;
-  /* letter-spacing: 0.25rem; */
 }
 
 nav li a {
@@ -174,7 +173,8 @@ nav li:hover {
 }
 
 .title img {
-  width: 70%;
+  width: 50%;
+  height: 50%;
   margin: 0 auto;
 }
 
@@ -183,9 +183,6 @@ main .meteor-loop  {
   overflow: hidden;
   top: -20vh;
   left: 0vw;
-   /* 화면 왼쪽 위 밖에서 시작 */
-  /* transform: translate(-150%, -150%) rotate(-75deg);  */
-   /* 2초 동안 이동, 3초 대기 후 반복 → 총 5초 간격 */
   animation: moveImage 4s ease-in-out infinite;
 }
 
@@ -277,23 +274,24 @@ main .mouse {
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
   position: absolute;
-  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%) rotate(-45deg);
   animation: updown 1s infinite;
+  cursor: pointer;
+  z-index: 999;
 }
 
 @keyframes updown {
   0% {
-    bottom: 1rem;
+    bottom: 2rem;
   }
 
   50% {
-    bottom: 1.5rem;
+    bottom: 2.5rem;
   }
 
   100% {
-    bottom: 1rem;
+    bottom: 2rem;
   }
 }
 
@@ -318,7 +316,6 @@ main .profile h2 {
   color: rgb(218, 216, 216);
   font-size: 2.5rem;
   text-align: center;
-  /* padding: 4vh 0; */
 }
 
 main .portfolio h2 {
@@ -334,7 +331,6 @@ main .contact h2 {
   color: rgb(218, 216, 216);
   font-size: 2.5rem;
   text-align: center;
-  /* padding: 4vh 0; */
 }
 
 main h3 {
@@ -344,8 +340,10 @@ main h3 {
 }
 
 main p {
-  font-family: 'hakgyor';
+  font-family: 'kcc';
   color: rgb(218, 216, 216);
+  font-size: 1.2rem;
+
 }
 
 main .foot p {
@@ -371,7 +369,7 @@ main .foot p {
 
 .proleft img {
   margin: 0 3vw 0 0;
-  width: 15vw;
+  width: 10vw;
 }
 
 .txt {
@@ -409,7 +407,7 @@ main .foot p {
 }
 
 .pbox p {
-  margin: 0.5vh 0 0 2vw;
+  margin: 0 0 0 2vw;
 }
 
 .proright {
@@ -424,7 +422,7 @@ main .foot p {
 .skill {
   display: flex;
   justify-content: start;
-  margin: 6vh 0;
+  margin: 5vh 0;
 }
 
 .skill h3 {
@@ -441,9 +439,17 @@ main .foot p {
   flex-wrap: wrap;
 }
 
+
 .skill .logo img {
   margin: 1vh 1vw;
+  transition: transform 0.3s ease;
 }
+
+.skill .logo img:hover {
+  transform: translateY(-5px) scale(1.2);
+  cursor: pointer;
+}
+
 
 .contain2 {
   display: flex;
