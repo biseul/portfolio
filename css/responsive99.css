@@ -103,6 +103,19 @@
 
 }
 
+
+@media screen and (max-width: 610px) {
+  figure {
+    margin: 2vh 0;
+    width: 36rem;
+    height: 17rem;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+
+
 @media screen and (max-width: 430px) {
   main .star1 {
     position: absolute;
@@ -228,6 +241,14 @@
   
   .skill .logo img {
     margin: 1vh 1vw;
+  }
+
+  figure {
+    margin: 2vh 0;
+    width: 36rem;
+    height: 11rem;
+    position: relative;
+    cursor: pointer;
   }
 
   .contact .inner .mail {

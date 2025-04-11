@@ -297,7 +297,7 @@ $(function () {
   // video 클릭했을 때 할일
   //index 하나하나를 el(매개변수)으로 지은것임
   $('.portfolio figure').each(function (index, el) {
-    $(this).find('video')['0'].play();
+    $(this).find('iframe')['0'].play();
     // $(el).mouseleave(function () {
     //   $(this).find('video')['0'].pause();
     //   $(this).find('video')['0'].currentTime = 0;
@@ -307,22 +307,22 @@ $(function () {
       // 해당하는 li 안에 들어있는 text 부분이랑 src 부분을 가져오는 것
       const title = $(this).find('h3').text();
       const txt = $(this).find('p').text();
-      const videoSrc = $(this).find('video').attr('src');
+      const iframeSrc = $(this).find('iframe').attr('src');
 
       // popup에 있는 h2, p, video 부분에 넣어주는 것
       // attr은 속성
       $('.popup').find('h3').text(title);
       $('.popup').find('p').text(txt);
-      $('.popup').find('video').attr('src', videoSrc);
+      $('.popup').find('iframe').attr('src', iframeSrc);
 
       // popup에 on 클래스 붙여서 화면에 보이게 됨 + 비디오 재생
       $('.popup').addClass('on');
       $('.popup').find('figure').off('mouseleave');
-      $('.popup').find('video')[0].play();
+      $('.popup').find('iframe')[0].play();
     });
   });
   $('.popup button').click(function () {
     $('.popup').removeClass('on');
-    $('.popup').find('video')[0].pause();
+    $('.popup').find('iframe')[0].pause();
   });
 });
