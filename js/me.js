@@ -65,31 +65,28 @@ $(function () {
   let resizeTimeout;
 
   window.addEventListener('resize', function () {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(function () {
       if (window.innerWidth <= 1024 && !window.location.href.includes('index99.html')) {
         window.location.href = 'index99.html';
       }
-    }, 300);
   });
 
   // video 클릭했을 때 할일
   //index 하나하나를 el(매개변수)으로 지은것임
   $('.portfolio figure').each(function (index, el) {
     //자식요소를 찾을때 find
-    $(el).mouseenter(function () {
-      $(this).find('iframe')['0'].play();
-    });
-    $(el).mouseleave(function () {
-      $(this).find('iframe')['0'].pause();
-      $(this).find('iframe')['0'].currentTime = 0;
-    });
+    // $(el).mouseenter(function () {
+    //   $(this).find('iframe')['0'].play();
+    // });
+    // $(el).mouseleave(function () {
+    //   $(this).find('iframe')['0'].pause();
+    //   $(this).find('iframe')['0'].currentTime = 0;
+    // });
 
-    $(el).click(function () {
+    $(el).find('.cover').click(function () {
       // 해당하는 li 안에 들어있는 text 부분이랑 src 부분을 가져오는 것
-      const title = $(this).find('h3').text();
-      const txt = $(this).find('p').text();
-      const iframeSrc = $(this).find('iframe').attr('src');
+      const title = $(el).find('h3').text();
+      const txt = $(el).find('p').text();
+      const iframeSrc = $(el).find('iframe').attr('src').replace('controls=0', 'controls=1');
 
       // popup에 있는 h2, p, video 부분에 넣어주는 것
       // attr은 속성
@@ -100,12 +97,10 @@ $(function () {
       // popup에 on 클래스 붙여서 화면에 보이게 됨 + 비디오 재생
       $('.popup').addClass('on');
       $('.popup').find('figure').off('mouseleave');
-      $('.popup').find('iframe')[0].play();
     });
   });
   $('.popup button').click(function () {
     $('.popup').removeClass('on');
-    $('.popup').find('iframe')[0].pause();
   });
 
   // 유성우 각도 설정

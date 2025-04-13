@@ -460,38 +460,54 @@ main .foot p {
 
 
 .portfolio .inner {
-  width: 100%;
+  width: calc(65vw + 14rem);
+  padding:3rem 7rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 7rem 7rem;
 }
 
 .videobox1 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .videobox2 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 figure {
-  width: 40rem;
-  height: 21rem;
+  width: 30vw;
+  aspect-ratio: 16/9;
   position: relative;
   margin: 2rem 0;
   cursor: pointer;
 }
 
 figure iframe {
-  width: 94%;
+  width: 100%;
   height: 100%;
+}
+
+figure .cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
 figure .bbox {
   position: absolute;
   visibility: hidden;
-  width: 94%;
+  width: 100%;
   height: 17%;
   background-color: rgba(0, 0, 0, 0.2);
   bottom: 50%;
