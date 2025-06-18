@@ -58,6 +58,11 @@ li a {
   color: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .fixed-bg {
   background: url(../images/scrollbg.png) no-repeat center/cover;
   position: relative;
@@ -295,6 +300,11 @@ main p {
 .birth {
   display: flex;
   margin: 4vh 0;
+}
+
+.awards {
+  display: flex;
+  margin: 0 0 5vh 0;
 }
 
 .edu {
@@ -538,6 +548,25 @@ figure:hover h3 {
 .contact .inner .mail p {
   font-size: 0.8rem;
   margin: 0 0 0 2vw;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6vh 0;
+  padding: 1vh 4vw;
+  border-radius: 20px;
+  background-color: rgb(5, 60, 102);
+  color: rgb(218, 216, 216);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.resume:active {
+  background-color: rgb(0, 19, 44);
+  color: rgb(218, 216, 216);
+  transition: all 0.3s;
 }
 
 .top {
