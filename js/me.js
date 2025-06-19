@@ -6,7 +6,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '산불 발생 시 긴급 대피 요령',
-        url: '../images/fire.pdf',
+        url: '/images/fire.pdf',
       },
     ],
   },
@@ -16,7 +16,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '민화 속 동구의 사계',
-        url: '../images/donggu.pdf',
+        url: '/images/donggu.pdf',
       },
     ],
   },
@@ -26,7 +26,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '민화 속 동구의 사계',
-        url: '../images/donggu2.pdf',
+        url: '/images/donggu2.pdf',
       },
     ],
   },
@@ -36,7 +36,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '헌혈, 가장 따뜻한 나눔의 시작',
-        url: '../images/blood.pdf',
+        url: '/images/blood.pdf',
       },
     ],
   },
@@ -46,7 +46,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '수호의 일기',
-        url: '../images/diary.pdf',
+        url: '/images/diary.pdf',
       },
     ], 
   },
@@ -56,7 +56,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '담다(DAM:DA) - 청춘과 음악을 담다',
-        url: '../images/damda.pdf',
+        url: '/images/damda.pdf',
       },
     ], 
   },
@@ -65,26 +65,26 @@ const videoSlides = [
 // 포스터
 const posterSlides = [
   {
-    src: '../images/andong.jpg',
+    src: '/images/andong.jpg',
     title: '[안동국제탈춤페스티벌 2025 포스터 공모전]\n 꼭꼭 숨어라! \n(장려상 수상)',
     pdfs: [
       {
         title: '꼭꼭 숨어라!',
-        url: '../images/andong.pdf',
+        url: '/images/andong.pdf',
       },
       {
         title: '장려상 상장',
-        url: '../images/award.pdf',
+        url: '/images/award.pdf',
       },
     ], 
   },
   {
-    src: '../images/yeongcheon.jpg',
+    src: '/images/yeongcheon.jpg',
     title: '[제22회 2025 영천보현산별빛축제 포스터 공모전] 별 그리고 토성, 영천에서 만나는 축제의 순간',
     pdfs: [
       {
         title: '별 그리고 토성, 영천에서 만나는 축제의 순간',
-        url: '../images/star.pdf',
+        url: '/images/star.pdf',
       },
     ], 
   },
