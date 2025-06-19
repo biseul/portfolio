@@ -79,7 +79,7 @@ const posterSlides = [
     ], 
   },
   {
-    src: './images/Yeongcheon.jpg',
+    src: './images/yeongcheon1.jpg',
     title: '[제22회 2025 영천보현산별빛축제 포스터 공모전] 별 그리고 토성, 영천에서 만나는 축제의 순간',
     pdfs: [
       {
