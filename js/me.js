@@ -6,7 +6,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '산불 발생 시 긴급 대피 요령',
-        url: 'https://example.com/file1.pdf',
+        url: '../images/fire.pdf',
       },
     ],
   },
@@ -16,7 +16,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '민화 속 동구의 사계',
-        url: 'https://example.com/file1.pdf',
+        url: '../images/donggu.pdf',
       },
     ],
   },
@@ -26,7 +26,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '민화 속 동구의 사계',
-        url: 'https://example.com/file1.pdf',
+        url: '../images/donggu2.pdf',
       },
     ],
   },
@@ -36,7 +36,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '헌혈, 가장 따뜻한 나눔의 시작',
-        url: 'https://example.com/file1.pdf',
+        url: '../images/blood.pdf',
       },
     ],
   },
@@ -46,7 +46,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '수호의 일기',
-        url: 'https://example.com/file1.pdf',
+        url: '../images/diary.pdf',
       },
     ], 
   },
@@ -56,7 +56,7 @@ const videoSlides = [
     pdfs: [
       {
         title: '담다(DAM:DA) - 청춘과 음악을 담다',
-        url: 'https://example.com/file1.pdf',
+        url: '../images/damda.pdf',
       },
     ], 
   },
@@ -70,11 +70,11 @@ const posterSlides = [
     pdfs: [
       {
         title: '꼭꼭 숨어라!',
-        url: 'https://example.com/file1.pdf',
+        url: '../images/andong.pdf',
       },
       {
-        title: '꼭꼭 숨어라!',
-        url: 'https://example.com/file1.pdf',
+        title: '장려상 상장',
+        url: '../images/award.pdf',
       },
     ], 
   },
@@ -84,17 +84,7 @@ const posterSlides = [
     pdfs: [
       {
         title: '별 그리고 토성, 영천에서 만나는 축제의 순간',
-        url: 'https://example.com/file1.pdf',
-      },
-    ], 
-  },
-  {
-    src: 'https://marketplace.canva.com/EAGKcWMwAfY/2/0/1131w/canva-%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%B8%94%EB%A3%A8-%EC%8B%AC%ED%94%8C%ED%95%9C-%EC%97%AC%EB%A6%84-%EB%A7%88%EA%B0%90-%EC%84%B8%EC%9D%BC-%ED%8F%AC%EC%8A%A4%ED%84%B0-ZokKkDJkeHo.jpg',
-    title: '숨어라 탈놀이!',
-    pdfs: [
-      {
-        title: '기획서 보기',
-        url: 'https://example.com/file1.pdf',
+        url: '../images/star.pdf',
       },
     ], 
   },
