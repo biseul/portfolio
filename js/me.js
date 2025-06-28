@@ -2,7 +2,7 @@
 const videoSlides = [
   { 
     id: 'YDY5qzbnUI0', 
-    title: '[인포그래픽]\n 산불 발생 시 긴급 대피 요령', 
+    title: '[인포그래픽]\n 산불 발생 시\n 긴급 대피 요령', 
     pdfs: [
       {
         title: '산불 발생 시 긴급 대피 요령',
@@ -12,7 +12,7 @@ const videoSlides = [
   },
   { 
     id: 'mCe5NSdx0Qo', 
-    title: '[제2회 대구광역시 동구 공공디자인 공모전] 민화 속 동구의 사계', 
+    title: '[제2회 대구광역시 동구 공공디자인 공모전]\n 민화 속 동구의 사계', 
     pdfs: [
       {
         title: '민화 속 동구의 사계',
@@ -22,7 +22,7 @@ const videoSlides = [
   },
   { 
     id: 'TRPZpbGE8Lg', 
-    title: '[3D 모델 크로마키 합성] 민화 속 동구의 사계', 
+    title: '[3D 모델 크로마키 합성]\n 민화 속 동구의 사계', 
     pdfs: [
       {
         title: '민화 속 동구의 사계',
@@ -32,7 +32,7 @@ const videoSlides = [
   },
   { 
     id: 'aIDLr695t7Q', 
-    title: '[2025 대한민국 헌혈 공모전] 헌혈, 가장 따뜻한 나눔의 시작', 
+    title: '[2025 대한민국 헌혈 공모전]\n 헌혈, 가장 따뜻한 나눔의 시작', 
     pdfs: [
       {
         title: '헌혈, 가장 따뜻한 나눔의 시작',
@@ -42,17 +42,21 @@ const videoSlides = [
   },
   { 
     id: 'UbjDmG_orDc', 
-    title: '[제1회 안전한 대한민국 영상 공모전] 수호의 일기', 
+    title: '[제1회 안전한 대한민국 영상 공모전]\n 수호의 일기 \n(입선 수상)', 
     pdfs: [
       {
         title: '수호의 일기',
         url: './images/diary.pdf',
       },
+      {
+        title: '입선 상장',
+        url: './images/award.pdf',
+      },
     ], 
   },
   { 
     id: 'QB9p7Ug4BE4', 
-    title: '[음악 예능 프로그램] 담다(DAM:DA) - 청춘과 음악을 담다',
+    title: '[음악 예능 프로그램]\n 담다(DAM:DA) \n- 청춘과 음악을 담다',
     pdfs: [
       {
         title: '담다(DAM:DA) - 청춘과 음악을 담다',
@@ -80,7 +84,7 @@ const posterSlides = [
   },
   {
     src: './images/yeongcheon1.jpg',
-    title: '[제22회 2025 영천보현산별빛축제 포스터 공모전] 별 그리고 토성, 영천에서 만나는 축제의 순간',
+    title: '[제22회 2025 영천보현산별빛축제 포스터 공모전]\n 별 그리고 토성, 영천에서 만나는 축제의 순간',
     pdfs: [
       {
         title: '별 그리고 토성, 영천에서 만나는 축제의 순간',
